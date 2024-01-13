@@ -40,7 +40,10 @@ project img {
     max-width: 100%;
     height: auto;
 }
-
+#hola {
+    width: 7%;
+    
+}
 footer {
     background-color: #333;
     color: #fff;
