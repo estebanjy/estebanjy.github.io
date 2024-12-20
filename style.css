@@ -44,9 +44,18 @@ project img {
     width: 7%;
     
 }
+
+#me {
+    width: 25%; /* The image will take 100% of the container's width */
+    max-width: 25%; /* Ensure it doesn't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures proper centering */
+    margin: 0 auto; /* Center the image */
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
 }
