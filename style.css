@@ -10,10 +10,26 @@ body {
     padding: 20px;
 }
 
+.about-container {
+    display: flex; /* Colocar los elementos en una fila */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espaciar los elementos */
+    gap: 20px; /* Espaciado entre texto e imagen */
+    margin: 10px 0; /* Reducir espacio vertical */
+}
+
+/* Estilo para el texto */
+.about-text {
+    flex: 1; /* El texto ocupa el espacio restante */
+    text-align: left; /* Alinear texto a la izquierda */
+    margin: 0; /* Reducir márgenes adicionales */
+}
+
+
 header {
     color: #333;
     text-align: center;
-    padding: 40px 0;
+    padding: 0px;
 }
 
 header h1 {
@@ -22,9 +38,6 @@ header h1 {
     color: #333;
 }
 
-section {
-    margin: 40px 0;
-}
 
 section h2 {
     font-family: 'Garamond';
@@ -46,11 +59,15 @@ project img {
 }
 
 #me {
-    width: 25%; /* The image will take 100% of the container's width */
+     /* The image will take 100% of the container's width */
     max-width: 25%; /* Ensure it doesn't exceed the container's width */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures proper centering */
     margin: 0 auto; /* Center the image */
+    width: 150px; /* Tamaño de la imagen */
+    object-fit: cover; /* Ajustar el contenido */
+    margin: 0;
+    text-align: right;
 }
 
 footer {
@@ -58,4 +75,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1px 0;
+    width: 100%; /* Asegura que el footer abarque todo el ancho */
+   
 }
