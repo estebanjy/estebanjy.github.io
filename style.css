@@ -1,6 +1,7 @@
 body {
-    font-family: 'verdana';
-    font-size: 14px;
+    font-family: 'Verdana'; 
+    font-weight: 400;
+    font-size: small;
     margin: 0;
     padding: 0;
 }
