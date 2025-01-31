@@ -27,6 +27,14 @@ body {
     margin: 0; /* Reducir márgenes adicionales */
 }
 
+.row {
+    display: flex;
+}
+.column {
+    flex: 20%;
+    padding: 5px;
+}
+
 
 header {
     color: #333;
