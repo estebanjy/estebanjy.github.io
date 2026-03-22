@@ -7,6 +7,9 @@
     <link rel="icon" href="/images/jy.ico">
     <title>{% if page.title %}{{ page.title }} | Juan Yurquina{% else %}Juan Yurquina{% endif %}</title>
     {% seo %}
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') document.documentElement.classList.add('dark');
+    </script>
 </head>
 <body>
     <header>
@@ -27,5 +30,17 @@
             <img src="/images/argentina-flag-icon.png" alt="argentinian flag" id="hola">
         </div>
     </footer>
+
+    <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode">🌙</button>
+
+    <script>
+        function toggleDark() {
+            var on = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', on);
+            document.getElementById('dark-toggle').textContent = on ? '☀️' : '🌙';
+        }
+        if (document.documentElement.classList.contains('dark'))
+            document.getElementById('dark-toggle').textContent = '☀️';
+    </script>
 </body>
 </html>

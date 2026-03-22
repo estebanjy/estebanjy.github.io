@@ -130,5 +130,33 @@ footer {
     text-align: center;
     padding: 1px 0;
     width: 100%; /* Asegura que el footer abarque todo el ancho */
-   
+
 }
+
+/* ─── Dark mode toggle ─────────────────────────────────────────── */
+#dark-toggle {
+    position: fixed;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 4px;
+    line-height: 1;
+    z-index: 999;
+}
+
+#dark-toggle:hover { opacity: 1; }
+
+/* ─── Dark mode colors ─────────────────────────────────────────── */
+html.dark body         { background-color: #1a1a1a; color: #e0e0e0; }
+html.dark header       { color: #e0e0e0; }
+html.dark header h1    { color: #e0e0e0; }
+html.dark nav a        { color: #aaa; }
+html.dark section h2   { color: #e0e0e0; }
+html.dark a            { color: #aaa; }
+html.dark footer       { background-color: #111; }
+html.dark .post-date,
+html.dark .post-meta   { color: #777; }
