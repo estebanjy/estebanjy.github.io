@@ -40,7 +40,13 @@ header {
     color: #333;
     text-align: center;
     padding: 0px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
 }
+
+html.dark header { background-color: #1a1a1a !important; }
 
 header h1 {
     margin: 0;
