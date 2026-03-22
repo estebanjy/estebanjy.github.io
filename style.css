@@ -135,6 +135,9 @@ footer {
 
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
 #dark-toggle {
+    position: fixed;
+    top: 14px;
+    right: 18px;
     background: none;
     border: none;
     font-size: 1.2rem;
@@ -142,6 +145,7 @@ footer {
     opacity: 0.55;
     padding: 4px;
     line-height: 1;
+    z-index: 9999;
 }
 
 #dark-toggle:hover { opacity: 1; }
@@ -174,16 +178,33 @@ html.dark .post-meta    { color: #777 !important; }
 
 /* ─── Mobile ───────────────────────────────────────────────────── */
 @media (max-width: 600px) {
-    /* Stack bio table: text on top, photo hidden (too cramped otherwise) */
+    /* Stack bio table */
     table, tbody, tr, td { display: block !important; width: 100% !important; }
 
-    /* Hide the profile photo on mobile */
+    /* Show profile photo centered below the text */
     td[style*="max-width: 40%"],
-    td[style*="max-width:40%"] { display: none !important; }
+    td[style*="max-width:40%"] {
+        display: block !important;
+        width: 50% !important;
+        margin: 0 auto 16px !important;
+        padding: 0 !important;
+    }
 
     /* Restore sensible padding for text cells */
     td[style*="vertical-align:middle"],
     td[style*="vertical-align: middle"] { padding: 16px !important; }
+
+    /* Center the title */
+    header { text-align: center; }
+
+    /* Button: positioned within the header, top-right, scrolls with page */
+    .header-inner { position: relative; }
+    #dark-toggle {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1;
+    }
 
     /* Make iframe fill the screen */
     iframe {
@@ -199,5 +220,4 @@ html.dark .post-meta    { color: #777 !important; }
 
     /* Give containers breathing room */
     .container { padding: 0 12px; }
-
 }
