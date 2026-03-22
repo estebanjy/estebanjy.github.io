@@ -272,6 +272,9 @@ iframe { max-width: 100%; }
 @media (max-width: 600px) {
     html, body { overflow-x: hidden; }
 
+    /* Prevent title overlapping the dark mode button */
+    header h1 { padding-right: 40px; }
+
     /* All text wraps properly inside table cells */
     td { word-wrap: break-word; overflow-wrap: break-word; }
 
