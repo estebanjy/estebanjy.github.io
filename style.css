@@ -176,47 +176,35 @@ html.dark footer *      { color: #aaa !important; }
 html.dark .post-date,
 html.dark .post-meta    { color: #777 !important; }
 
+/* ─── Responsive (all screen sizes) ───────────────────────────── */
+* { box-sizing: border-box; }
+
+/* Images and iframes never overflow their container */
+img { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+
 /* ─── Mobile ───────────────────────────────────────────────────── */
 @media (max-width: 600px) {
-    /* Prevent horizontal scroll */
     html, body { overflow-x: hidden; }
-    * { box-sizing: border-box; }
 
-    /* Bio table: keep as real table so photo stays on the right */
-    .bio-table { width: 100% !important; }
-    .bio-table td { word-wrap: break-word; overflow-wrap: break-word; }
+    /* All text wraps properly inside table cells */
+    td { word-wrap: break-word; overflow-wrap: break-word; }
 
-    /* All other tables: stack into single column */
-    table:not(.bio-table),
-    table:not(.bio-table) tbody,
-    table:not(.bio-table) tr,
-    table:not(.bio-table) td {
-        display: block !important;
-        width: 100% !important;
-    }
-
-    /* Give content cells proper padding */
-    table:not(.bio-table) td { padding: 16px !important; }
-
-    /* All images stay within bounds */
-    img { max-width: 100% !important; height: auto !important; }
-
-    /* Make iframe fluid */
+    /* Fluid iframe with correct aspect ratio */
     iframe {
         width: 100% !important;
         height: auto !important;
         aspect-ratio: 16 / 9;
     }
 
-    /* Stack image grid into single column */
+    /* Stack cansat image grid into single column */
     .row { flex-direction: column; }
     .column { flex: 1 1 100%; }
-    .column img { width: 100% !important; height: auto !important; }
 
     /* Containers: side padding */
     .container { padding: 0 16px; }
 
-    /* Dark toggle: fixed bottom-right on mobile so it never overlaps content */
+    /* Dark toggle: fixed bottom-right */
     #dark-toggle {
         position: fixed;
         top: auto;
