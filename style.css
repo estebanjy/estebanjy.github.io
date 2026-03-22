@@ -124,6 +124,91 @@ nav a:hover {
     max-width: 680px;
 }
 
+/* ─── Projects page ────────────────────────────────────────────── */
+.projects-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 24px 48px;
+}
+
+.projects-container h2 {
+    font-family: 'Garamond';
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.projects-group {
+    margin-bottom: 40px;
+}
+
+.projects-status {
+    font-size: small;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    margin: 0 0 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.projects-status.in-progress { color: #b07d00; }
+.projects-status.completed   { color: #4a4a4a; }
+
+.project-card {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.project-card:last-child { border-bottom: none; }
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: small;
+}
+
+.project-tools {
+    font-size: 0.8em;
+    color: #888;
+    white-space: nowrap;
+}
+
+.project-desc {
+    font-size: small;
+    color: #444;
+    margin: 0 0 8px;
+    line-height: 1.6;
+}
+
+.project-links {
+    font-size: 0.85em;
+}
+
+.project-links a {
+    margin-right: 12px;
+    color: #333;
+}
+
+.projects-empty {
+    font-size: small;
+    color: #aaa;
+    margin: 0;
+}
+
+/* Dark mode adjustments */
+html.dark .projects-container h2   { color: #d8d8d8 !important; }
+html.dark .projects-status.completed { color: #aaa !important; }
+html.dark .project-desc            { color: #bbb !important; }
+html.dark .projects-status         { border-bottom-color: #444 !important; }
+html.dark .project-card            { border-bottom-color: #333 !important; }
+
 footer {
     background-color: #333;
     color: #fff;
