@@ -220,10 +220,9 @@ footer {
 
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
 #dark-toggle {
-    position: fixed !important;
-    top: 14px !important;
-    right: 18px !important;
-    bottom: auto !important;
+    position: absolute;
+    top: 16px;
+    right: 16px;
     background: none;
     border: none;
     font-size: 1.2rem;
@@ -231,7 +230,7 @@ footer {
     opacity: 0.55;
     padding: 4px;
     line-height: 1;
-    z-index: 9999;
+    z-index: 1;
 }
 
 #dark-toggle:hover { opacity: 1; }
