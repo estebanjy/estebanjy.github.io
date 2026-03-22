@@ -175,3 +175,35 @@ html.dark footer        { background-color: #111 !important; color: #aaa !import
 html.dark footer *      { color: #aaa !important; }
 html.dark .post-date,
 html.dark .post-meta    { color: #777 !important; }
+
+/* ─── Mobile ───────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+    /* Stack bio table: text on top, photo hidden (too cramped otherwise) */
+    table, tbody, tr, td { display: block !important; width: 100% !important; }
+
+    /* Hide the profile photo on mobile */
+    td[style*="max-width: 40%"],
+    td[style*="max-width:40%"] { display: none !important; }
+
+    /* Restore sensible padding for text cells */
+    td[style*="vertical-align:middle"],
+    td[style*="vertical-align: middle"] { padding: 16px !important; }
+
+    /* Make iframe fill the screen */
+    iframe {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Stack image grid into a single column */
+    .row { flex-direction: column; }
+    .column { flex: 1 1 100%; }
+    .column img { height: auto !important; }
+
+    /* Give containers breathing room */
+    .container { padding: 0 12px; }
+
+    /* Prevent the moon button overlapping the title */
+    #dark-toggle { top: 10px; right: 10px; }
+}
