@@ -1,9 +1,10 @@
 body {
-    font-family: 'Verdana'; 
+    font-family: 'Verdana';
     font-weight: 400;
     font-size: small;
     margin: 0;
     padding: 0;
+    background-color: #faf8f4;
 }
 
 .container {
