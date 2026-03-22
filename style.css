@@ -219,10 +219,18 @@ footer {
 }
 
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
+.header-title-row {
+    display: flex;
+    align-items: center;
+}
+
+.header-title-row h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
 #dark-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
     background: none;
     border: none;
     font-size: 1.2rem;
@@ -230,7 +238,7 @@ footer {
     opacity: 0.55;
     padding: 4px;
     line-height: 1;
-    z-index: 1;
+    flex-shrink: 0;
 }
 
 #dark-toggle:hover { opacity: 1; }
@@ -272,10 +280,7 @@ iframe { max-width: 100%; }
 @media (max-width: 600px) {
     html, body { overflow-x: hidden; }
 
-    /* Prevent title overlapping the dark mode button */
-    header h1 { padding-right: 40px; }
-
-    /* All text wraps properly inside table cells */
+/* All text wraps properly inside table cells */
     td { word-wrap: break-word; overflow-wrap: break-word; }
 
     /* Fluid iframe with correct aspect ratio */
