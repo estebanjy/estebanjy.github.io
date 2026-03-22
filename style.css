@@ -83,6 +83,7 @@ project img {
 nav {
     margin-top: 6px;
     font-size: small;
+    text-align: center;
 }
 
 nav a {
@@ -220,20 +221,20 @@ footer {
 
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
 .header-title-row {
-    position: relative;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
 }
 
 .header-title-row h1 {
+    grid-column: 2;
     margin: 0;
-    display: inline-block;
+    text-align: center;
 }
 
 #dark-toggle {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    grid-column: 3;
+    justify-self: end;
     background: none;
     border: none;
     font-size: 1.2rem;
