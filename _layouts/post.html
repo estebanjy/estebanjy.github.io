@@ -2,12 +2,12 @@
 layout: default
 ---
 <section>
-    <div class="container post-container">
+    <div class="post-container">
         <h2>{{ page.title }}</h2>
         <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
         <div class="post-content">
             {{ content }}
         </div>
-        <p><a href="/blog/">&larr; Back to Blog</a></p>
+        <p class="post-back"><a href="/blog/">&larr; Back to Blog</a></p>
     </div>
 </section>
