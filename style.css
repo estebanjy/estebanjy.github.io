@@ -80,6 +80,50 @@ project img {
     text-align: right;
 }
 
+nav {
+    margin-top: 6px;
+    font-size: small;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.post-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 16px;
+}
+
+.post-date {
+    color: #888;
+    font-size: 0.85em;
+    margin-right: 8px;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 0.85em;
+}
+
+.post-content {
+    line-height: 1.7;
+    max-width: 680px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
