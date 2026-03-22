@@ -289,11 +289,4 @@ iframe { max-width: 100%; }
     /* Containers: side padding */
     .container { padding: 0 16px; }
 
-    /* Dark toggle: fixed bottom-right */
-    #dark-toggle {
-        position: fixed;
-        top: auto;
-        bottom: 20px;
-        right: 16px;
-    }
 }
