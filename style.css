@@ -135,9 +135,10 @@ footer {
 
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
 #dark-toggle {
-    position: fixed;
-    top: 14px;
-    right: 18px;
+    position: fixed !important;
+    top: 14px !important;
+    right: 18px !important;
+    bottom: auto !important;
     background: none;
     border: none;
     font-size: 1.2rem;
