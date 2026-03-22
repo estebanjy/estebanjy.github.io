@@ -220,17 +220,20 @@ footer {
 
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
 .header-title-row {
-    display: flex;
-    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
 .header-title-row h1 {
-    flex: 1;
-    text-align: center;
     margin: 0;
+    display: inline-block;
 }
 
 #dark-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background: none;
     border: none;
     font-size: 1.2rem;
@@ -238,7 +241,6 @@ footer {
     opacity: 0.55;
     padding: 4px;
     line-height: 1;
-    flex-shrink: 0;
 }
 
 #dark-toggle:hover { opacity: 1; }
