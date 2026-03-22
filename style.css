@@ -178,26 +178,41 @@ html.dark .post-meta    { color: #777 !important; }
 
 /* ─── Mobile ───────────────────────────────────────────────────── */
 @media (max-width: 600px) {
-    /* Stack bio table */
-    table, tbody, tr, td { display: block !important; width: 100% !important; }
+    /* Prevent horizontal scroll */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /* Make all tables fluid */
+    table, tbody, tr, td {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
 
     /* Show profile photo centered below the text */
-    td[style*="max-width: 40%"],
-    td[style*="max-width:40%"] {
-        display: block !important;
-        width: 50% !important;
-        margin: 0 auto 16px !important;
+    td.photo-td {
+        width: 60% !important;
+        margin: 8px auto 16px !important;
         padding: 0 !important;
     }
 
+    td.photo-td img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
     /* Restore sensible padding for text cells */
-    td[style*="vertical-align:middle"],
-    td[style*="vertical-align: middle"] { padding: 16px !important; }
+    td { padding: 16px !important; }
+    td.photo-td { padding: 0 !important; }
 
     /* Center the title */
     header { text-align: center; }
 
-    /* Button: positioned within the header, top-right, scrolls with page */
+    /* Button: absolute within header, scrolls with page */
     .header-inner { position: relative; }
     #dark-toggle {
         position: absolute;
@@ -206,18 +221,22 @@ html.dark .post-meta    { color: #777 !important; }
         z-index: 1;
     }
 
-    /* Make iframe fill the screen */
+    /* Make iframe fluid */
     iframe {
         width: 100% !important;
+        max-width: 100% !important;
         height: auto !important;
         aspect-ratio: 16 / 9;
     }
 
-    /* Stack image grid into a single column */
+    /* Stack image grid into single column */
     .row { flex-direction: column; }
-    .column { flex: 1 1 100%; }
-    .column img { height: auto !important; }
+    .column { flex: 1 1 100%; max-width: 100%; }
+    .column img { width: 100% !important; height: auto !important; }
 
-    /* Give containers breathing room */
-    .container { padding: 0 12px; }
+    /* Containers: side padding, no overflow */
+    .container { padding: 0 16px; box-sizing: border-box; }
+
+    /* Ensure images never overflow */
+    img { max-width: 100% !important; }
 }
