@@ -136,27 +136,42 @@ footer {
 /* ─── Dark mode toggle ─────────────────────────────────────────── */
 #dark-toggle {
     position: fixed;
-    top: 12px;
-    right: 16px;
+    top: 14px;
+    right: 18px;
     background: none;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.55;
     padding: 4px;
     line-height: 1;
-    z-index: 999;
+    z-index: 9999;
 }
 
 #dark-toggle:hover { opacity: 1; }
 
 /* ─── Dark mode colors ─────────────────────────────────────────── */
-html.dark body         { background-color: #1a1a1a; color: #e0e0e0; }
-html.dark header       { color: #e0e0e0; }
-html.dark header h1    { color: #e0e0e0; }
-html.dark nav a        { color: #aaa; }
-html.dark section h2   { color: #e0e0e0; }
-html.dark a            { color: #aaa; }
-html.dark footer       { background-color: #111; }
+html.dark body,
+html.dark body * {
+    background-color: inherit;
+    color: inherit;
+}
+
+html.dark body {
+    background-color: #1a1a1a !important;
+    color: #d8d8d8 !important;
+}
+
+html.dark header        { background-color: #1a1a1a !important; color: #d8d8d8 !important; }
+html.dark header h1     { color: #d8d8d8 !important; }
+html.dark header h1 a   { color: #d8d8d8 !important; }
+html.dark nav a         { color: #aaa !important; }
+html.dark section       { background-color: #1a1a1a !important; color: #d8d8d8 !important; }
+html.dark section *     { color: #d8d8d8 !important; }
+html.dark a             { color: #9ab !important; }
+html.dark a:hover       { color: #bcd !important; }
+html.dark b, html.dark strong { color: #e8e8e8 !important; }
+html.dark footer        { background-color: #111 !important; color: #aaa !important; }
+html.dark footer *      { color: #aaa !important; }
 html.dark .post-date,
-html.dark .post-meta   { color: #777; }
+html.dark .post-meta    { color: #777 !important; }
