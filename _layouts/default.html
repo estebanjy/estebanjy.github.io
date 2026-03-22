@@ -3,33 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/images/jy.ico">
     <title>{% if page.title %}{{ page.title }} | Juan Yurquina{% else %}Juan Yurquina{% endif %}</title>
     {% seo %}
-    <script>
-        // Apply dark mode before paint to avoid flash
-        (function() {
-            var saved = localStorage.getItem('darkMode');
-            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (saved === 'true' || (saved === null && prefersDark)) {
-                document.documentElement.classList.add('dark');
-            }
-        })();
-    </script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-row">
-                <h1><a href="/">Juan E. Yurquina</a></h1>
-                <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode">
-                    <span id="dark-label">Dark</span>
-                </button>
-            </div>
+        <div class="container" style="padding: 2%; padding-bottom: 0%;">
+            <h1><a href="/" style="text-decoration:none; color:inherit;">Juan E. Yurquina</a></h1>
             <nav>
                 <a href="/">Home</a> &nbsp;/&nbsp;
                 <a href="/blog/">Blog</a>
@@ -42,21 +24,8 @@
     <footer>
         <div class="container">
             <p>&copy; {{ 'now' | date: "%Y" }} Juan Yurquina</p>
-            <img src="/images/argentina-flag-icon.png" alt="Argentinian flag" id="hola">
+            <img src="/images/argentina-flag-icon.png" alt="argentinian flag" id="hola">
         </div>
     </footer>
-
-    <script>
-        function toggleDark() {
-            var isDark = document.documentElement.classList.toggle('dark');
-            localStorage.setItem('darkMode', isDark);
-            updateLabel();
-        }
-        function updateLabel() {
-            var isDark = document.documentElement.classList.contains('dark');
-            document.getElementById('dark-label').textContent = isDark ? 'Light' : 'Dark';
-        }
-        updateLabel();
-    </script>
 </body>
 </html>
