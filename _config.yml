@@ -1,6 +1,6 @@
 title: Juan Yurquina
 description: Personal site of Juan E. Yurquina — Software Engineering, AI, Robotics, Aerospace.
-url: "https://jyurquina.com"
+url: "https://www.jyurquina.com"
 baseurl: ""
 
 permalink: /blog/:year/:month/:day/:title/
