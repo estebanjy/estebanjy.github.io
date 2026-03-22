@@ -179,64 +179,48 @@ html.dark .post-meta    { color: #777 !important; }
 /* ─── Mobile ───────────────────────────────────────────────────── */
 @media (max-width: 600px) {
     /* Prevent horizontal scroll */
-    html, body {
-        overflow-x: hidden;
-        max-width: 100%;
-    }
+    html, body { overflow-x: hidden; }
+    * { box-sizing: border-box; }
 
-    /* Make all tables fluid */
-    table, tbody, tr, td {
+    /* Bio table: keep as real table so photo stays on the right */
+    .bio-table { width: 100% !important; }
+    .bio-table td { word-wrap: break-word; overflow-wrap: break-word; }
+
+    /* All other tables: stack into single column */
+    table:not(.bio-table),
+    table:not(.bio-table) tbody,
+    table:not(.bio-table) tr,
+    table:not(.bio-table) td {
         display: block !important;
         width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
     }
 
-    /* Show profile photo centered below the text */
-    td.photo-td {
-        width: 60% !important;
-        margin: 8px auto 16px !important;
-        padding: 0 !important;
-    }
+    /* Give content cells proper padding */
+    table:not(.bio-table) td { padding: 16px !important; }
 
-    td.photo-td img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Restore sensible padding for text cells */
-    td { padding: 16px !important; }
-    td.photo-td { padding: 0 !important; }
-
-    /* Center the title */
-    header { text-align: center; }
-
-    /* Button: absolute within header, scrolls with page */
-    .header-inner { position: relative; }
-    #dark-toggle {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        z-index: 1;
-    }
+    /* All images stay within bounds */
+    img { max-width: 100% !important; height: auto !important; }
 
     /* Make iframe fluid */
     iframe {
         width: 100% !important;
-        max-width: 100% !important;
         height: auto !important;
         aspect-ratio: 16 / 9;
     }
 
     /* Stack image grid into single column */
     .row { flex-direction: column; }
-    .column { flex: 1 1 100%; max-width: 100%; }
+    .column { flex: 1 1 100%; }
     .column img { width: 100% !important; height: auto !important; }
 
-    /* Containers: side padding, no overflow */
-    .container { padding: 0 16px; box-sizing: border-box; }
+    /* Containers: side padding */
+    .container { padding: 0 16px; }
 
-    /* Ensure images never overflow */
-    img { max-width: 100% !important; }
+    /* Dark toggle: fixed bottom-right on mobile so it never overlaps content */
+    #dark-toggle {
+        position: fixed;
+        top: auto;
+        bottom: 20px;
+        right: 16px;
+    }
 }
