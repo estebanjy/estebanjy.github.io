@@ -45,13 +45,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-family: 'Garamond', Georgia, serif;
+    font-family: 'Garamond';
     color: #333;
 }
 
 
 section h2 {
-    font-family: 'Garamond', Georgia, serif;
+    font-family: 'Garamond';
     color: #333;
 
 }
@@ -134,7 +134,7 @@ nav a:hover {
 }
 
 .projects-container h2 {
-    font-family: 'Garamond', Georgia, serif;
+    font-family: 'Garamond';
     color: #333;
     margin-bottom: 24px;
 }
