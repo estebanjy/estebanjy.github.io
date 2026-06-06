@@ -4,10 +4,11 @@ title: "Hello, World"
 date: 2026-03-22
 description: "First post — why I'm starting this blog."
 ---
+Aun recuerdo mi primer Hello World escrito en python alla por el año 2015. Y siguio asi en cada lenguaje que cada proyecto me demandaba. 
 
-This is the first post on my site. I'm starting this blog to document things I'm learning, projects I'm working on, and ideas I want to think through more carefully.
+Amo los Hello World porque representan el inicio de un camino, de un cambio de carrera, de una nueva pasion. 
 
-Este es el primer post en mi sitio web. Estoy emocionado por documentar sobre cosas que estoy aprendiendo, proyectos en los que estoy trabajando e ideas que quiero desarrollar mas profundamente.
+Estoy emocionado por documentar sobre cosas que estoy aprendiendo, proyectos en los que estoy trabajando e ideas que quiero desarrollar mas profundamente.
 
 More soon.
 Con cariño Juan.
