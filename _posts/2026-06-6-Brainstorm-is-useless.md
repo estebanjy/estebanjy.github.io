@@ -10,6 +10,7 @@ Hace dos meses vengo trabajando con un equipo interuniversitario sobre un proyec
 Recibimos propuestas de inversion de diversos interesados tanto de una empresa familiar bastante consolidada en el Noroeste argentino como un Ingeniero que trabaja en el sector agropecuario. A partir de ahi empezaron a surgir algunas dudas en el equipo. 
 
 ![Rovik-1](/images/rovik-1.webp)
+*Rovik - 1*
 
 ## ¿Estamos acostumbrados a construir con un proposito?
 
