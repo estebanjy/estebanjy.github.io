@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Hello, World"
+title: "Problematicas - Mirada para crear algo util"
 date: 2026-06-06
-description: "Problematicas - Mirada para crear algo util"
+description: "Cuando tu proyecto de robotica busca ser mas que un proyecto de robotica ..."
 ---
 
 Hace dos meses vengo trabajando con un equipo interuniversitario sobre un proyecto. Un rover autonomo que completa tareas. Todo comenzo como un simple proyecto para una competencia, simplemente construiamos un robot porque nos apasionaba la idea de construir algo que sobresalga de lo comun a lo que la gente de Salta esta acostumbrada a ver cuando se trata de robotica. 
