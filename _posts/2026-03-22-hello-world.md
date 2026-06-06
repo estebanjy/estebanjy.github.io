@@ -2,7 +2,7 @@
 layout: post
 title: "Hello, World"
 date: 2026-03-22
-description: "First post — why I'm starting this blog."
+description: "Lo mas dificil es comenzar ..."
 ---
 Aun recuerdo mi primer Hello World escrito en python alla por el año 2015. Y siguio asi en cada lenguaje que cada proyecto me demandaba. 
 
